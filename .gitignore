@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+*.sqlite3
+
+# Node
+node_modules/
+dist/
+build/
+
+# Outras recomendações
+.env

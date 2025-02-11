@@ -1,0 +1,171 @@
+body {
+    background-color: #333;
+    margin: 0;
+
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.App {
+
+    max-width: 1000px;
+    margin: 0 auto;
+
+    padding: 100px;
+    background-color: #444;
+
+
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.input-container {
+    display: flex;
+
+
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    flex: 1;
+
+
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+
+    border-radius: 6px;
+    background-color: #555;
+    color: white;
+}
+
+button {
+
+
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+
+    border-radius: 6px;
+    background-color: #666;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #777;
+    transform: scale(1.02);
+}
+
+.lista-tarefas {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-tarefas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #555;
+
+    border-radius: 6px;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.lista-tarefas li:hover {
+    transform: translateX(5px);
+}
+
+.tarefa-container {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+    flex: 1;
+}
+
+.botoes-container {
+    display: flex;
+
+    gap: 15px;
+}
+
+input[type="checkbox"] {
+
+
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+span {
+
+    font-size: 18px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .App {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .lista-tarefas li {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tarefa-container {
+        width: 100%;
+    }
+
+    .botoes-container {
+        width: 100%;
+    }
+
+    .botoes-container button {
+        flex: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    input[type="text"],
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
