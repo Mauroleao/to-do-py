@@ -1,4 +1,4 @@
-echo "# To-do List Application
+# To-do List Application
 
 A modern task management application built with React frontend and Django REST Framework backend. This application allows users to create, complete, and delete tasks with a clean and responsive interface.
 
