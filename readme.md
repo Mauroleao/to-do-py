@@ -28,42 +28,42 @@ A modern task management application built with React frontend and Django REST F
 ### Backend Setup
 
 1. Create and activate virtual environment:
-\`\`\`bash
+```bash
 python -m venv venv
 .\venv\Scripts\activate
-\`\`\`
+```
 
 2. Install Python dependencies:
-\`\`\`bash
+```bash
 pip install django djangorestframework django-cors-headers
-\`\`\`
+```
 
 3. Run migrations:
-\`\`\`bash
+```bash
 python manage.py migrate
-\`\`\`
+```
 
 4. Start Django server:
-\`\`\`bash
+```bash
 python manage.py runserver
-\`\`\`
+```
 
 ### Frontend Setup
 
 1. Navigate to frontend directory:
-\`\`\`bash
+```bash
 cd frontend/frontend
-\`\`\`
+```
 
 2. Install dependencies:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Start React development server:
-\`\`\`bash
+```bash
 npm start
-\`\`\`
+```
 
 ## Usage
 
@@ -81,17 +81,39 @@ npm start
 
 ## Project Structure
 
-\`\`\`
-todo-list/
-├── backend/         # Django backend
-│   ├── api/        # REST API
-│   └── todo/       # Django project settings
-├── frontend/       # React frontend
-│   ├── public/
-│   └── src/
-└── README.md
-\`\`\`
+```
+to-do-py/
+├── .gitignore
+├── manage.py
+├── backend/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── tarefas/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── frontend/
+│   └── frontend/
+│       ├── package.json
+│       ├── public/
+│       │   ├── index.html
+│       │   └── ...
+│       └── src/
+│           ├── App.js
+│           ├── index.js
+│           ├── reportWebVitals.js
+│           └── ...
+└── venv/
+    └── ...
+```
 
 The application will be running on:
-- Frontend: http://localhost:3000
-- Backend: http://localhost:8000" > README.md
+- Frontend: "http://localhost:3000"
+- Backend: "http://localhost:8000" 
