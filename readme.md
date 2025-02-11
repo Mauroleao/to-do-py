@@ -1,7 +1,7 @@
 # To-do List Application
 
 <p align="center">
-  <img src="caminho/para/sua/imagem.png" alt="Descrição da Imagem">
+  <img src="./Captura de tela 2025-02-11 095247.png" alt="Descrição da Imagem">
 </p>
 
 A modern task management application built with React frontend and Django REST Framework backend. This application allows users to create, complete, and delete tasks with a clean and responsive interface.
